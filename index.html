@@ -8,7 +8,7 @@
 	{% for post in site.posts %}
 	<p>
 		{{ post.date | date_to_string }}
-		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
 		<br/><strong>site.baseurl : {{ site.baseurl }}</strong>
 		<br/><em>post.url : {{ post.url }}</em>
 		<br/><strong>site.url : {{ site.url }}</strong>
