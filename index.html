@@ -8,10 +8,10 @@
 	{% for post in site.posts %}
 	<p>
 		{{ post.date | date_to_string }}
-		<a href="{{ post.url }}">{{ post.title }}</a>
-		<strong>{{ site.baseurl }}</strong>
-		<em>{{ post.url }}</em>
-		<strong>{{ site.url }}</strong>
+		<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+		<br/><strong>site.baseurl : {{ site.baseurl }}</strong>
+		<br/><em>post.url : {{ post.url }}</em>
+		<br/><strong>site.url : {{ site.url }}</strong>
 	</p>
 	{% endfor %}
 </ul>
